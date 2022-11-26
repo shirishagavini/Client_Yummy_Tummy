@@ -49,13 +49,16 @@ public class SplashFragment extends BaseFragment {
                             @Override
                             public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                                 List<UserData> details = queryDocumentSnapshots.toObjects(UserData.class);
+
                                 String currUserId = FirebaseAuth.getInstance().getUid();
                                 for(int i=0;i<details.size();i++){
                                     if(details.get(i).getUserId().equals(currUserId) && details.get(i).getUserType().equals("customer")){
 //                                      checking if the customer has sign in in the client app
                                         Toast.makeText(getActivity(),"You are not eligible for this application",Toast.LENGTH_SHORT);
                                         break;
+
                                     }
+
                                     if(details.get(i).getUserId().equals(currUserId) && details.get(i).getIsFormFilled().equals("true")){
 //                                        launching the dashboard activity if the form is filled
                                         Intent DashboardActivity = new Intent(getActivity(),DashBoardActivity.class);
@@ -67,10 +70,13 @@ public class SplashFragment extends BaseFragment {
                                         loadFragment(new UserFormFragment(),false);
                                     }
                                 }
+
                             }
+
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e){
+                                //Error Msg created
                                 Toast.makeText(getActivity(), "Something Went Wrong", Toast.LENGTH_SHORT).show();
                             }
                         });

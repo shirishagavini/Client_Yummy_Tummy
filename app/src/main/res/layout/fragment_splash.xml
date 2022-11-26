@@ -9,17 +9,17 @@
         android:id="@+id/logoImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/restaurant_logo"
         app:layout_constraintBottom_toTopOf="@+id/splashImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/restaurant_logo"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/splashImageView"
         android:layout_width="wrap_content"
         android:layout_height="260dp"
         android:src="@drawable/background_splash_image"
+        android:id="@+id/splashImageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
 
