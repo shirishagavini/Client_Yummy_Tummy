@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="9dp"
+    android:layout_marginTop="9dp"
+    android:layout_marginEnd="9dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/myorder_bg"
+    android:elevation="15dp">
+
+    <TextView
+        android:id="@+id/orderIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Order Id :"
+        android:textColor="@color/theme_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/orderIdNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text=""
+        android:textColor="@color/theme_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/orderIdTextView"
+        app:layout_constraintStart_toEndOf="@id/orderIdTextView"
+        app:layout_constraintTop_toTopOf="@id/orderIdTextView" />
+
+    <TextView
+        android:id="@+id/paymentModeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Quantity :"
+        android:textColor="@color/theme_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orderIdTextView" />
+
+    <TextView
+        android:id="@+id/modeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text=""
+        android:textColor="@color/theme_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/paymentModeTextView"
+        app:layout_constraintStart_toEndOf="@id/paymentModeTextView"
+        app:layout_constraintTop_toTopOf="@id/paymentModeTextView" />
+
+    <TextView
+        android:id="@+id/orderDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Order Date :"
+        android:textColor="@color/theme_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/paymentModeTextView" />
+
+    <TextView
+        android:id="@+id/costTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Cost :"
+        android:textColor="@color/theme_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orderDateTextView" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="26 March 2022"
+        android:textColor="@color/theme_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/orderDateTextView"
+        app:layout_constraintStart_toEndOf="@id/orderDateTextView"
+        app:layout_constraintTop_toTopOf="@id/orderDateTextView" />
+
+    <TextView
+        android:id="@+id/costing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Rs 105"
+        android:textColor="@color/theme_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/costTextView"
+        app:layout_constraintStart_toEndOf="@id/costTextView"
+        app:layout_constraintTop_toTopOf="@id/costTextView" />
+
+
+    <TextView
+        android:id="@+id/itemNameVieww"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:text="Item Name :"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:textColor="@color/theme_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/costTextView" />
+    <TextView
+        android:id="@+id/itemNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Rs 105"
+        android:textColor="@color/theme_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/itemNameVieww"
+        app:layout_constraintStart_toEndOf="@id/itemNameVieww"
+        app:layout_constraintTop_toTopOf="@id/itemNameVieww" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:text="My Details"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/restaurant_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+
+
+
+        <TextView
+            android:id="@+id/nameTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_26sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="serif"
+            android:text="Enter Resturant Name"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logoImageView" />
+
+
+        <EditText
+            android:id="@+id/namedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:editable="false"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/start_registration_editext_bg"
+            android:drawableEnd="@drawable/ic_blue_tick"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="serif"
+            android:inputType="text"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/natural_grey"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameTextview" />
+
+        <TextView
+            android:id="@+id/phoneTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:fontFamily="serif"
+            android:text="Enter Phone Number"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/namedittext"
+            app:layout_constraintTop_toBottomOf="@id/namedittext" />
+
+
+        <EditText
+            android:id="@+id/phoneEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/start_registration_editext_bg"
+            android:drawableEnd="@drawable/ic_blue_tick"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:editable="false"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/natural_grey"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="@id/namedittext"
+            app:layout_constraintHorizontal_bias="0.692"
+            app:layout_constraintStart_toStartOf="@id/namedittext"
+            app:layout_constraintTop_toBottomOf="@id/phoneTextview" />
+
+
+        <TextView
+            android:id="@+id/award_category_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:fontFamily="serif"
+            android:text="Enter Full Address"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/phoneEdittext"
+            app:layout_constraintTop_toBottomOf="@id/phoneEdittext" />
+
+        <EditText
+            android:id="@+id/stateEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/start_registration_editext_bg"
+            android:drawableEnd="@drawable/ic_blue_tick"
+            android:fontFamily="serif"
+            android:padding="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:maxLines="1"
+            android:maxLength="50"
+            android:editable="false"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/natural_grey"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="@+id/phoneEdittext"
+            app:layout_constraintStart_toStartOf="@+id/phoneEdittext"
+            app:layout_constraintTop_toBottomOf="@+id/award_category_textview" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

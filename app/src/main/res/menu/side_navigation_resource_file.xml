@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ordersPending"
+            android:title="Orders Pending"
+            android:icon="@drawable/orders"/>
+        <item
+            android:id="@+id/ordersCompeleted"
+            android:title="Orders Compeleted"
+            android:icon="@drawable/orders_compeleted"/>
+        <item
+            android:id="@+id/menu"
+            android:title="My Menu"
+            android:icon="@drawable/ic_baseline_restaurant_menu_24" />
+        <item
+            android:id="@+id/profile"
+            android:title="My Profile"
+            android:icon="@drawable/ic_profile" />
+    </group>
+
+</menu>

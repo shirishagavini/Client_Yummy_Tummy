@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Yummy Tummy Client</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="orders_completed">Orders Completed</string>
+    <string name="orders_pending">Orders Pending</string>
+    <string name="add_an_item">Add an Item</string>
+</resources>
