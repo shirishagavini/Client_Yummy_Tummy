@@ -40,6 +40,7 @@ public class OrderPendingFragment extends BaseFragment{
         try{
 //          getting the current user ID of the restaurant
             currUserID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
 //            getting the documents of the incomplete order from the firebase
             FirebaseFirestore.getInstance().collection("Resturants").document(currUserID).collection("InComplete Orders").get()
                     .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {

@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                                         if(currUser != null){
 //                                            Catching the exception
                                             try{
-//                                              Getting the Resturant details
+//                                              Getting the details
                                                 FirebaseFirestore.getInstance().collection("Resturants").document(currUser.getUid())
                                                         .collection("Details").get()
                                                         .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
