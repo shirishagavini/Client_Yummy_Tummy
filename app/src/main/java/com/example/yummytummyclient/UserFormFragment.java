@@ -30,12 +30,13 @@ public class UserFormFragment extends BaseFragment {
 
 
     public UserFormFragment() {
-        // Required empty public constructor
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+                             Bundle savedInstanceState)
+    {
         // Inflate the layout for this fragment
 //        this is the fragment is responsible for getting the information from the restaurant owner and putting it into the database
         view = inflater.inflate(R.layout.fragment_user_form, container, false);
@@ -43,19 +44,20 @@ public class UserFormFragment extends BaseFragment {
         AppCompatButton submitButton = view.findViewById(R.id.submitButton);
 
         nametextView = view.findViewById(R.id.namedittext);
-        pincodetextView = view.findViewById(R.id.pincodeEdittext);
         phoneNumbertextView = view.findViewById(R.id.phoneEdittext);
         addresstextView = view.findViewById(R.id.stateEdittext);
+        pincodetextView = view.findViewById(R.id.pincodeEdittext);
 
-        submitButton.setOnClickListener(new View.OnClickListener() {
+        submitButton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) {
                 String name,phone,pincode,address,state,landmark;
 //              getting the data from the edittext and converting them into the string
                 name = nametextView.getText().toString();
                 phone = phoneNumbertextView.getText().toString();
-                pincode = pincodetextView.getText().toString();
                 address = addresstextView.getText().toString();
+                pincode = pincodetextView.getText().toString();
 //                checking if the field provided are not empty
                 if(!name.isEmpty() && !phone.isEmpty() && !pincode.isEmpty() && !address.isEmpty()){
                     currUserID = FirebaseAuth.getInstance().getCurrentUser().getUid();

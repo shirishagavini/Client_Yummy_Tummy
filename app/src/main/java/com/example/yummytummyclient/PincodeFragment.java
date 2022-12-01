@@ -20,16 +20,19 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class PincodeFragment extends BaseFragment {
+public class PincodeFragment extends BaseFragment
+{
 
 
-    public PincodeFragment() {
+    public PincodeFragment()
+    {
         // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+                             Bundle savedInstanceState)
+    {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_pincode, container, false);
         return view;

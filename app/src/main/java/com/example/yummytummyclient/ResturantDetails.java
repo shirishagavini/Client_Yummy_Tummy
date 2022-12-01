@@ -42,11 +42,13 @@ public class ResturantDetails {
         this.walletBalance = walletBalance;
     }
 
-    public ResturantDetails() {
+    public ResturantDetails()
+    {
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "ResturantDetails{" +
                 "name='" + name + '\'' +
                 ", phone='" + phone + '\'' +

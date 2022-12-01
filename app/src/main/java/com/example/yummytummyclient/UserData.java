@@ -4,14 +4,17 @@ public class UserData {
     String isFormFilled;
     String userId,userType = "client";
 
-    public String getUserType() {
+    public String getUserType()
+    {
         return this.userType;
     }
 
-    public UserData() {
+    public UserData()
+    {
     }
 
-    public UserData(String isFormFilled, String userId) {
+    public UserData(String isFormFilled, String userId)
+    {
         this.isFormFilled = isFormFilled;
         this.userId = userId;
     }
