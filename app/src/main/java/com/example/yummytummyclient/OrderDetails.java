@@ -2,7 +2,8 @@ package com.example.yummytummyclient;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class OrderDetails {
+public class OrderDetails
+{
     String itemName,itemId;
     int price;
     int quantity;
@@ -10,7 +11,8 @@ public class OrderDetails {
     boolean isComepleted = false;
 
 
-    public OrderDetails() {
+    public OrderDetails()
+    {
     }
 
     public OrderDetails(String itemName, String itemId, int price, int quantity, String date, String timeStamp, String paymentMode,String currUserId) {
@@ -96,7 +98,8 @@ public class OrderDetails {
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "OrderDetails{" +
                 "itemName='" + itemName + '\'' +
                 ", itemId='" + itemId + '\'' +

@@ -23,10 +23,12 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.List;
 
-public class OrderCompeletedFragment extends BaseFragment {
+public class OrderCompeletedFragment extends BaseFragment
+{
 
-    public OrderCompeletedFragment() {
-        // Required empty public constructor
+    public OrderCompeletedFragment()
+    {
+
     }
 
     @Override

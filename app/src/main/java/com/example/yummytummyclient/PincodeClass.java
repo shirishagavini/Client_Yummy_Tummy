@@ -1,7 +1,8 @@
 package com.example.yummytummyclient;
 
 public class PincodeClass {
-    public PincodeClass() {
+    public PincodeClass()
+    {
     }
     String pincode;
 
@@ -10,7 +11,8 @@ public class PincodeClass {
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "PincodeClass{" +
                 "pincode='" + pincode + '\'' +
                 '}';

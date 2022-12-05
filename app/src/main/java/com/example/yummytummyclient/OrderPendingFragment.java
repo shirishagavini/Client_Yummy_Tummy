@@ -26,14 +26,13 @@ import java.util.List;
 public class OrderPendingFragment extends BaseFragment{
 
     public OrderPendingFragment() {
-        // Required empty public constructor
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-//        this is the order pending fragment in which all the orders which has been placed by the customer get displayed to the vendor for the very first time for getting it completed
+
         view = inflater.inflate(R.layout.fragment_order_pending, container, false);
         RecyclerView recyclerView = view.findViewById(R.id.recycelerView);
         AppCompatButton saveButton = view.findViewById(R.id.register_again_textView);

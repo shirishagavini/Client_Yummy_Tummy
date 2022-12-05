@@ -22,17 +22,18 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.List;
 
-public class MyMenuFragment extends BaseFragment {
+public class MyMenuFragment extends BaseFragment
+{
 
-    public MyMenuFragment() {
-        // Required empty public constructor
+    public MyMenuFragment()
+    {
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-//        this is the menu fragment for setting up the menu items and adding up the menu items
+
         view =  inflater.inflate(R.layout.fragment_my_menu, container, false);
         final String[] pincode = new String[1];
 //        getting the current user ID of the restaurant
