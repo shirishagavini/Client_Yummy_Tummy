@@ -12,7 +12,7 @@
         android:id="@+id/textView2"
         android:layout_marginTop="@dimen/_35sdp"
         android:text="@string/orders_completed"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/purple_700"
         android:textSize="@dimen/_25sdp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

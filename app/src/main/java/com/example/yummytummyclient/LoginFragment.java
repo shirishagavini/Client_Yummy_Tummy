@@ -26,17 +26,17 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.Arrays;
 import java.util.List;
 
-public class LoginFragment extends BaseFragment {
+public class LoginFragment extends BaseFragment
+{
 
     public LoginFragment() {
-        // Required empty public constructor
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-//        Setting up the layout on the fragemnet
+
         view = inflater.inflate(R.layout.fragment_login, container, false);
         AppCompatButton loginButton;
         loginButton = view.findViewById(R.id.loginButton);

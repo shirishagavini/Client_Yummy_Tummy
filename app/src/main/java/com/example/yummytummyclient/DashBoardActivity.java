@@ -19,12 +19,13 @@ import android.view.MenuItem;
 import com.google.android.material.navigation.NavigationView;
 
 
-public class DashBoardActivity extends AppCompatActivity {
-//  Variables declared the drawer layout
+public class DashBoardActivity extends AppCompatActivity
+{
+
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
     private NavigationView nvDrawer;
-//  Make sure to be using androidx.appcompat.app.ActionBarDrawerToggle version.
+
     private ActionBarDrawerToggle drawerToggle;
 
     @Override
@@ -32,11 +33,11 @@ public class DashBoardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_board);
 
-//      Setting up the custom toolbar for the drawer layout.
+
         toolbar = (Toolbar) findViewById(R.id.customToolbar);
         setSupportActionBar(toolbar);
 
-// This will display an Up icon (<-), we will replace it with hamburger later
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mDrawer = (DrawerLayout) findViewById(R.id.drawer);
 //      Setting the up the drawer layout.
@@ -46,7 +47,6 @@ public class DashBoardActivity extends AppCompatActivity {
             Log.e("error","hello");
         }
 
-        // Setup toggle to display hamburger icon with nice animation
         drawerToggle.setDrawerIndicatorEnabled(true);
         drawerToggle.syncState();
 //      Tie DrawerLayout events to the ActionBarToggle
@@ -65,9 +65,11 @@ public class DashBoardActivity extends AppCompatActivity {
         setupDrawerContent(nvDrawer);
     }
 
-    private void setupDrawerContent(NavigationView navigationView) {
+    private void setupDrawerContent(NavigationView navigationView)
+    {
         navigationView.setNavigationItemSelectedListener(
-                new NavigationView.OnNavigationItemSelectedListener() {
+                new NavigationView.OnNavigationItemSelectedListener()
+                {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 //                      setting up the menuItem

@@ -38,10 +38,11 @@ import com.google.firebase.storage.UploadTask;
 import java.io.IOException;
 import java.util.List;
 
-public class AddItemFragment extends BaseFragment {
+public class AddItemFragment extends BaseFragment
+{
 
     public AddItemFragment() {
-        // Required empty public constructor
+
     }
 
     private final int PICK_IMAGE_REQUEST = 25;
@@ -51,7 +52,7 @@ public class AddItemFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
          view = inflater.inflate(R.layout.fragment_add_item, container, false);
 
          itemIdTextView = view.findViewById(R.id.namedittext);
@@ -84,7 +85,7 @@ public class AddItemFragment extends BaseFragment {
     {
         if (filePath != null) {
 
-            // Code for showing progressDialog while uploading
+
             ProgressDialog progressDialog
                     = new ProgressDialog(getActivity());
             progressDialog.setTitle("Uploading...");
@@ -96,7 +97,7 @@ public class AddItemFragment extends BaseFragment {
                     .child("Product Images")
                     .child(itemIdTextView.getText().toString()+System.currentTimeMillis()+".jpeg");
 
-            // adding listeners on upload
+
             // or failure of image
             ref.putFile(filePath)
                     .addOnSuccessListener(

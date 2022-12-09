@@ -1,14 +1,17 @@
 package com.example.yummytummyclient;
 
-public class Location {
+public class Location
+{
     String userId,userName;
     double longitude,latitude;
 
 
-    public Location() {
+    public Location()
+    {
     }
 
-    public Location(String userId, String userName, double longitude, double latitude) {
+    public Location(String userId, String userName, double longitude, double latitude)
+    {
         this.userId = userId;
         this.userName = userName;
         this.longitude = longitude;
